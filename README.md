@@ -1,3 +1,3 @@
 # React + Vite
 
-Website Catatan Belanja menggunakan ReactJSs
+Website Catatan Belanja menggunakan ReactJS
