@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: "Comfortaa", sans-serif;
+  color: #283618;
+  background: linear-gradient(to bottom right, #f0e4c3, #d8e6b6); /* Gradien latar belakang */
+  transition: background 0.3s ease;
+}
+
+.app {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 1rem;
+  border-radius: 1rem; /* Sudut melengkung untuk app container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk app container */
+}
+
+h1 {
+  font-family: "Borel";
+  text-align: center;
+  background: linear-gradient(to right, #283618, #606c38); /* Gradien teks */
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; Memungkinkan gradien pada teks */
+  font-size: 6rem;
+  padding: 4rem 0 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.add-form {
+  background-color: #dda15e;
+  padding: 2.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  border-radius: 1rem; /* Sudut melengkung untuk form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form h3 {
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+#quantity {
+  margin-right: 20px;
+}
+
+button,
+select,
+input {
+  background-color: #fefae0;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.5rem; /* Sudut membulat, bukan oval */
+  padding: 1.2rem 3.2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  flex: 1;
+  max-width: 250px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transisi untuk latar belakang dan bayangan */
+}
+
+button {
+  background-color: #283618;
+  color: #fefae0;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #fefae0;
+  color: #283618;
+  /* transform: scale(1.05); Efek memperbesar saat hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+.list li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.6rem;
+  padding: 0; /* Menghapus padding agar pas dengan ukuran */
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 0.5rem; /* Sudut membulat */
+  transition: background-color 0.3s ease;
+}
+
+.list li button:hover {
+  background-color: darkred;
+}
+
+.list {
+  background-image: url(img/paper-bg.jpg);
+  background-repeat: repeat-y;
+  background-attachment: local;
+  color: #fefae0;
+  padding: 2.3rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list li {
+  color: #283618;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3.6rem;
+  transition: transform 0.2s, background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+.list li:hover {
+  transform: translateY(-3px); /* Efek mengangkat saat hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Latar belakang saat hover */
+}
+
+.list input[type="checkbox"] {
+  height: 3rem;
+  width: 3rem;
+  accent-color: #283618;
+}
+
+.list li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.6rem;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.list li button:hover {
+  /* background-color: darkred; */
+}
+
+.actions {
+  background-color: #606c38;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.actions button,
+.actions select {
+  padding: 0.8rem 2.4rem;
+  font-size: 1.4rem;
+  margin: 0 0.8rem;
+  width: 150%;
+  max-width: 335px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover,
+.actions select:hover {
+  /* background-color: #4a5825; */
+}
+
+.stats {
+  background-color: #bc6c25;
+  color: white;
+  text-align: center;
+  padding: 3.2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .add-form h3 {
+    font-size: 2rem;
+  }
+
+  button,
+  select,
+  input {
+    font-size: 1.6rem;
+  }
+
+  .list li {
+    font-size: 3.5rem;
+  }
+
+  .stats {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .add-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .list li {
+    font-size: 3rem;
+  }
+
+  .stats {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  .add-form h3 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .list li {
+    font-size: 2.5rem;
+  }
+
+  button,
+  select,
+  input {
+    padding: 1rem;
+  }
+
+  .stats {
+    font-size: 1.4rem;
+  }
+}
